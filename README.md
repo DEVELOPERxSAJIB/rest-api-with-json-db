@@ -5,5 +5,5 @@
 ## First colone this repo and install its package
 
 ```console
-$npm install
+$ npm install
 ```
