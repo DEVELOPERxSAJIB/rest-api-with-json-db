@@ -1,6 +1,7 @@
 const express = require('express');
 const colors = require('colors');
 const dotenv = require('dotenv');
+const userRouter = require('./routes/userRoute')
 
 
 // init environment variable
@@ -15,7 +16,15 @@ app.use( express.json() );
 app.use( express.urlencoded ( {extended : false }) );
 
 
+// routes
+app.use('/api/v1/user', userRouter);
 
+
+
+// Database
+    // users.json
+    // students.json
+    // products.json
 
 
 // listen port
